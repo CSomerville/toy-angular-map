@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>#map-canvas {height: 300px;}</style>
+  <title>hello world</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.min.js"></script>
+  <script src="angular/map.js"></script>
+  <script src="angular/mapdisplay.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1LoOupsLIS0xyQDaGGyLPaHaJV21wmTs&libraries=visualization&sensor=true_or_false"></script>
+</head>
+<body>
+  <div ng-app="mapdisplay" ng-controller="MapDisplay">
+    <div id="map-canvas"></div>
+    <button ng-click="randoHeatMap(map)">clicker</button>
+    <button ng-click="logVisualization(map)">do it</button>
+  </div>
+</body>
+</html>
